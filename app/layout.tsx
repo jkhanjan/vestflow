@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className="min-h-screen bg-[#08090f] text-white antialiased" style={{ fontFamily: "system-ui, sans-serif" }}>
+      <body className="min-h-screen antialiased" style={{ fontFamily: "system-ui, sans-serif" }}>
         <WalletProvider>{children}</WalletProvider>
       </body>
     </html>

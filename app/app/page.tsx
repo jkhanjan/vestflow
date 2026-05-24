@@ -35,7 +35,22 @@ export default function DashboardPage() {
             <p className="text-zinc-400 mt-1">Your active vesting schedules</p>
           </div>
           <div className="flex gap-3">
-            <button onClick={load} disabled={loading} className="text-sm text-zinc-400 hover:text-white border border-white/10 rounded-lg px-3 py-2 transition-colors disabled:opacity-40">
+            <button
+              onClick={load}
+              disabled={loading}
+              className="
+                text-sm
+                text-[var(--foreground)]/70
+                hover:text-[var(--foreground)]
+                border
+                border-[var(--card-border)]
+                rounded-lg
+                px-3
+                py-2
+                transition-colors
+                disabled:opacity-40
+              "
+            >
               {loading ? "Loading…" : "↻ Refresh"}
             </button>
             <Link href="/app/create" className="btn-primary rounded-lg px-4 py-2 text-sm font-semibold text-white">
